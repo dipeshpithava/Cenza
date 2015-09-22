@@ -20,5 +20,13 @@
 		<script src="<?=site_url()?>/wp-content/themes/cenza_corporate/assets/js/script.js"></script>
 		<script src="<?=site_url()?>/wp-content/themes/cenza_corporate/assets/javascripts/demo.js"></script>
 		<script src="<?=site_url()?>/wp-content/themes/cenza_corporate/assets/js/jquery-ui.min.js"></script>
+		<script src="<?=site_url()?>/wp-content/themes/cenza_corporate/assets/js/jquery.form.min.js"></script>
+		<script type="text/javascript">
+		$("form").ajaxForm(function(response){
+			// console.log(response);
+			alert("Thank you for response.");
+			$(".dp_frm")[0].reset();
+		});
+		</script>
 	</body>
 </html>
