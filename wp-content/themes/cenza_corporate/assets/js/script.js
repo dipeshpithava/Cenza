@@ -104,7 +104,7 @@ $(document).ready(function(){
 	$( ".click_full" ).click(function() {
 		$(".tada").fadeOut();
 		$(".click_full").hide();
-		$(this).parent().animate({ width: "100%" });
+		$(this).parent().parent().animate({ width: "100%" });
 		$(".download_pdf,.case_close").delay(600).fadeIn('slow');
 		$(".page6_text1").css("margin-bottom", "0");
 	});
@@ -122,7 +122,7 @@ $(document).ready(function(){
 	$( ".click_full1" ).click(function() {
 		$(".tada1").fadeOut();
 		$(".click_full1").hide();
-		$(this).parent().animate({ width: "100%" });
+		$(this).parent().parent().animate({ width: "100%" });
 		$(".download_pdf1,.case_close1").delay(600).fadeIn('slow');
 		$(".page6_text1").css("margin-bottom", "0");
 	});
