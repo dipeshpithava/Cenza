@@ -22,10 +22,15 @@
 		<script src="<?=site_url()?>/wp-content/themes/cenza_corporate/assets/js/jquery-ui.min.js"></script>
 		<script src="<?=site_url()?>/wp-content/themes/cenza_corporate/assets/js/jquery.form.min.js"></script>
 		<script type="text/javascript">
-		$("form").ajaxForm(function(response){
+		$(".dp_frm").ajaxForm(function(response){
 			// console.log(response);
 			alert("Thank you for response.");
 			$(".dp_frm")[0].reset();
+		});
+		$(document).ready(function(){
+			$("#search_btn").click(function(){
+				$("#search_frm").submit();
+			});
 		});
 		</script>
 	</body>
